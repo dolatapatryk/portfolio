@@ -6,11 +6,9 @@ export type NavbarItemInfo = {
     link: string;
 }
 
-type NavbarItemProps = NavbarItemInfo & { itemClicked: any }
-
-export const NavbarItem: FunctionComponent<NavbarItemProps> = (props: NavbarItemProps) =>
+export const NavbarItem: FunctionComponent<NavbarItemInfo> = (props: NavbarItemInfo) =>
     <li id={props.name}>
-        <NavLink to={props.link} onClick={props.itemClicked.bind(this, props.name)}>
+        <NavLink to={props.link}>
             {props.name}
         </NavLink>
     </li>

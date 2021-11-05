@@ -17,21 +17,11 @@ class Navbar extends Component<{}, NavbarState> {
         {name: 'Contact', link: '/contact'}
     ]
 
-    activeItem = (item: string) => {
-        if (this.state.activeItem) {
-            document.getElementById(this.state.activeItem)!.classList.remove('active');
-        }
-        this.setState({activeItem: item}, () => {
-            document.getElementById(this.state.activeItem)!.classList.add('active');
-        })
-    }
-
     render() {
         return (
             <nav>
                 <ul>
-                    {this.items.map(item =>
-                        <NavbarItem key={item.name} name={item.name} link={item.link} itemClicked={this.activeItem}/>)}
+                    {this.items.map(item => <NavbarItem key={item.name} name={item.name} link={item.link}/>)}
                 </ul>
             </nav>
         )

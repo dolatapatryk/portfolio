@@ -1,7 +1,7 @@
 import {FunctionComponent} from "react";
 
 export const About: FunctionComponent = () =>
-    <div className="condiv">
+    <div className="container">
         <h1 className="subtopic">About Me</h1>
         <h4>Hi there,</h4>
         <h1>I'm Patryk Dolata</h1>
