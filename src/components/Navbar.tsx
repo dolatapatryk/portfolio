@@ -20,11 +20,11 @@ class Navbar extends Component<{}, NavbarState> {
         return (
             <nav>
                 <ul>
-                    <NavbarItem itemName="Home" link="/" itemClicked={this.activeItem}></NavbarItem>
-                    <NavbarItem itemName="About" link="/about" itemClicked={this.activeItem}></NavbarItem>
-                    <NavbarItem itemName="Education" link="/education" itemClicked={this.activeItem}></NavbarItem>
-                    <NavbarItem itemName="Skills" link="/skills" itemClicked={this.activeItem}></NavbarItem>
-                    <NavbarItem itemName="Contact" link="/contact" itemClicked={this.activeItem}></NavbarItem>
+                    <NavbarItem itemName="Home" link="/" itemClicked={this.activeItem}/>
+                    <NavbarItem itemName="About" link="/about" itemClicked={this.activeItem}/>
+                    <NavbarItem itemName="Education" link="/education" itemClicked={this.activeItem}/>
+                    <NavbarItem itemName="Skills" link="/skills" itemClicked={this.activeItem}/>
+                    <NavbarItem itemName="Contact" link="/contact" itemClicked={this.activeItem}/>
                 </ul>
             </nav>
         )
