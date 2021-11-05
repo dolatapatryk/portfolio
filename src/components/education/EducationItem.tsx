@@ -2,7 +2,7 @@ import {FunctionComponent} from "react";
 import {EducationItemInfo} from "../../data/EducationInfo";
 
 export const EducationItem: FunctionComponent<EducationItemInfo> = (props: EducationItemInfo) =>
-    <div className="education-item">
+    <div className="card-item">
         <div>
             <h3>{props.degree}</h3>
             {props.speciality && <h5>{props.speciality}</h5>}

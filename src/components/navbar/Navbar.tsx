@@ -12,6 +12,7 @@ class Navbar extends Component<{}, NavbarState> {
     private items: Array<NavbarItemInfo> = [
         {name: 'Home', link: '/'},
         {name: 'About', link: '/about'},
+        {name: 'Experience', link: '/experience'},
         {name: 'Education', link: '/education'},
         {name: 'Skills', link: '/skills'},
         {name: 'Contact', link: '/contact'}

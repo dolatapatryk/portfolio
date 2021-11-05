@@ -6,6 +6,7 @@ import {Socials} from "./Socials";
 export const Home: FunctionComponent = () =>
     <div className="container home">
         <img src={picture} className="picture" alt="Me"/>
-        <ReactTypingEffect className="typing-effect" text={['xdd', 'sadasd']} speed={100} eraseDelay={700}/>
-        <Socials />
+        <ReactTypingEffect className="typing-effect" text={['Patryk Dolata', 'Software Engineer']} speed={100}
+                           eraseDelay={700}/>
+        <Socials/>
     </div>
