@@ -1,7 +1,7 @@
 import {FunctionComponent} from "react";
 import ReactTypingEffect from 'react-typing-effect';
 import picture from '../img/pic.jpeg'
-import {Socials} from "./Socials";
+import {Socials} from "../components/Socials";
 
 export const Home: FunctionComponent = () =>
     <div className="condiv home">

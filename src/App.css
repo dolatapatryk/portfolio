@@ -53,22 +53,21 @@ nav ul li {
     font-weight: bolder;
 }
 
-.home
-{
+.home {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 
 }
-.picture
-{
+
+.picture {
     border-radius: 50%;
     width: 200px;
     margin: 30px;
 }
-.typingEffect
-{
+
+.typingEffect {
     font-size: var(--typing-font);
     margin-bottom: 30px;
 }
@@ -102,15 +101,19 @@ h1, h2, h3, h4, p {
     margin: 10px;
 }
 
-.education-item
-{
-    border:0px solid #9a9b9c;
+.education-item {
+    border: 0px solid #9a9b9c;
     display: flex;
-    margin:30px 0px 30px 0px;
+    margin: 30px 0px 30px 0px;
 }
-.education-item:hover
-{
+
+.education-item:hover {
     color: #1b1d20;
     background-color: #ffffff;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.skills ul li {
+    list-style-type: none;
+    margin: 30px;
 }
