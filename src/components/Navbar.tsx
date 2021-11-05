@@ -6,13 +6,18 @@ type NavbarState = {
 }
 
 class Navbar extends Component<{}, NavbarState> {
+    state: NavbarState = {
+        activeItem: ''
+    }
 
     activeItem = (item: string) => {
+        console.log(item);
         if (this.state.activeItem) {
-            document.getElementById(this.state.activeItem)!.classList.remove('active')
+            document.getElementById(this.state.activeItem)!.classList.remove('active');
         }
         this.setState({activeItem: item}, () => {
-            document.getElementById(this.state.activeItem)!.classList.add('active')
+            console.log('elem', document.getElementById(this.state.activeItem));
+            document.getElementById(this.state.activeItem)!.classList.add('active');
         })
     }
 

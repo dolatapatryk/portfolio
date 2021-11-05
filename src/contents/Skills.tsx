@@ -6,6 +6,6 @@ export const Skills: FunctionComponent = () =>
     <div className="condiv skills">
         <h1 className="subtopic">My Skills</h1>
         <ul>
-            {mySkills.map(skill => <li>{skill}</li>)}
+            {mySkills.map(skill => <li key={skill}>{skill}</li>)}
         </ul>
     </div>
