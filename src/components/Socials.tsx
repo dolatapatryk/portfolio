@@ -1,18 +1,6 @@
 import {FunctionComponent} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {IconName} from "@fortawesome/free-brands-svg-icons";
-
-type SocialMedia = {
-    href: string;
-    name: IconName;
-}
-
-const mySocials: Array<SocialMedia> = [
-    {name: 'github', href: 'https://github.com/dolatapatryk'},
-    {name: 'instagram', href: 'https://instagram.com/patrykdolata'},
-    {name: 'facebook', href: 'https://www.facebook.com/dolata.patryk1'},
-    {name: 'linkedin', href: 'https://linkedin.com/in/patryk-dolata-711829175/'}
-]
+import {mySocials} from "../data/SocialMediaInfo";
 
 export const Socials: FunctionComponent = () =>
     <div className="social">

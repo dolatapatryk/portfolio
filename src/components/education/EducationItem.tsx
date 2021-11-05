@@ -1,13 +1,5 @@
 import {FunctionComponent} from "react";
-
-export type EducationItemInfo = {
-    university: string;
-    degree: string;
-    from: string;
-    to: string;
-    faculty: string;
-    speciality?: string;
-}
+import {EducationItemInfo} from "../../data/EducationInfo";
 
 export const EducationItem: FunctionComponent<EducationItemInfo> = (props: EducationItemInfo) =>
     <div className="education-item">

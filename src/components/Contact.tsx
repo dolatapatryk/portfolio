@@ -1,5 +1,5 @@
 import {FunctionComponent} from "react";
-import {Socials} from "../components/Socials";
+import {Socials} from "./Socials";
 
 export const Contact: FunctionComponent = () =>
     <div className="condiv">

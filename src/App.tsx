@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Navbar from "./components/Navbar";
-import {Home} from "./contents/Home";
-import {About} from "./contents/About";
-import {Education} from "./contents/Education";
-import {Skills} from "./contents/Skills";
-import {Contact} from "./contents/Contact";
+import Navbar from "./components/navbar/Navbar";
+import {Home} from "./components/Home";
+import {About} from "./components/About";
+import {Education} from "./components/education/Education";
+import {Skills} from "./components/Skills";
+import {Contact} from "./components/Contact";
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {faFacebook, faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 

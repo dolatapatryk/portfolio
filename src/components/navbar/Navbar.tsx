@@ -1,5 +1,5 @@
 import {Component} from "react";
-import {NavbarItem} from "./NavbarItem";
+import {NavbarItem, NavbarItemInfo} from "./NavbarItem";
 
 type NavbarState = {
     activeItem: string;
@@ -9,6 +9,13 @@ class Navbar extends Component<{}, NavbarState> {
     state: NavbarState = {
         activeItem: ''
     }
+    private items: Array<NavbarItemInfo> = [
+        {name: 'Home', link: '/'},
+        {name: 'About', link: '/about'},
+        {name: 'Education', link: '/education'},
+        {name: 'Skills', link: '/skills'},
+        {name: 'Contact', link: '/contact'}
+    ]
 
     activeItem = (item: string) => {
         if (this.state.activeItem) {
@@ -23,11 +30,8 @@ class Navbar extends Component<{}, NavbarState> {
         return (
             <nav>
                 <ul>
-                    <NavbarItem itemName="Home" link="/" itemClicked={this.activeItem}/>
-                    <NavbarItem itemName="About" link="/about" itemClicked={this.activeItem}/>
-                    <NavbarItem itemName="Education" link="/education" itemClicked={this.activeItem}/>
-                    <NavbarItem itemName="Skills" link="/skills" itemClicked={this.activeItem}/>
-                    <NavbarItem itemName="Contact" link="/contact" itemClicked={this.activeItem}/>
+                    {this.items.map(item =>
+                        <NavbarItem key={item.name} name={item.name} link={item.link} itemClicked={this.activeItem}/>)}
                 </ul>
             </nav>
         )
