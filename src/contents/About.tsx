@@ -3,16 +3,13 @@ import {FunctionComponent} from "react";
 export const About: FunctionComponent = () =>
     <div className="condiv">
         <h1 className="subtopic">About Me</h1>
-        <h4>Hey there,</h4>
-        <h1>I'm Abdul Wahid Naafi</h1>
-        <h3>Full Stack Web <u>Developer</u> | UI/UX <u>Designer</u></h3>
+        <h4>Hi there,</h4>
+        <h1>I'm Patryk Dolata</h1>
+        <h3>Software Engineer</h3>
         <br></br>
-        <p>I started my journey in the world of computers from an young age,
-            now I’m 20 years old, Pursuing my Software Engineering Degree in
-            VIT University Vellore. Web development is my center of interest, i always
-            love the idea of cross-platform development, 1-n one code base deploy into almost
-            any platform, which web technology like Javascript enables me to do. I also like
-            creating Interactive UI components for better UX and share those desgin and codes
-            to the world through Github, Codepen and Instagram.
+        <p>My name is Patryk Dolata and I'm a software engineer.
+            I'm from Poland, living in Poznań and currently working
+            as Java Software Engineer. I graduated Poznań University of Technology with a Bachelor of Engineering degree
+            in Computing and Adam Mickiewicz University with Master's degree in CS.
         </p>
     </div>
