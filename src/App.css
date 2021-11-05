@@ -112,12 +112,17 @@ p {
     font-size: var(--fontsize-p);
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5, hr, p {
     margin: 10px;
+}
+
+hr {
+    width: 30%;
 }
 
 .education-item {
     border: 0px solid #9a9b9c;
+    border-radius: 10px;
     display: flex;
     margin: 30px 0px 30px 0px;
 }

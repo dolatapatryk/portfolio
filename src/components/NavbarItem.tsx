@@ -1,5 +1,5 @@
 import {FunctionComponent} from "react";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 type NavbarItemProps = {
     link: string;
@@ -9,7 +9,7 @@ type NavbarItemProps = {
 
 export const NavbarItem: FunctionComponent<NavbarItemProps> = (props: NavbarItemProps) =>
     <li id={props.itemName}>
-        <Link to={props.link} onClick={props.itemClicked.bind(this, props.itemName)}>
+        <NavLink to={props.link} onClick={props.itemClicked.bind(this, props.itemName)}>
             {props.itemName}
-        </Link>
+        </NavLink>
     </li>

@@ -11,12 +11,10 @@ class Navbar extends Component<{}, NavbarState> {
     }
 
     activeItem = (item: string) => {
-        console.log(item);
         if (this.state.activeItem) {
             document.getElementById(this.state.activeItem)!.classList.remove('active');
         }
         this.setState({activeItem: item}, () => {
-            console.log('elem', document.getElementById(this.state.activeItem));
             document.getElementById(this.state.activeItem)!.classList.add('active');
         })
     }
