@@ -1,3 +1,8 @@
+export type ProjectInfo = {
+    company: string;
+    description: string;
+}
+
 export type ExperienceItemInfo = {
     company: string;
     position: string;
@@ -6,6 +11,7 @@ export type ExperienceItemInfo = {
     to: string;
     description: string;
     technologies: Array<string>;
+    projects?: Array<ProjectInfo>
 }
 
 export const myExperience: Array<ExperienceItemInfo> = [
@@ -15,8 +21,20 @@ export const myExperience: Array<ExperienceItemInfo> = [
         companyType: 'Outsourcing',
         from: 'July 2021',
         to: 'Present',
-        description: 'TODO',
-        technologies: ['Java']
+        description: 'Working for external clients and development of inside-company project.',
+        technologies: ['Java', 'Spring', 'Spring Boot', 'Kafka', 'Jenkins', 'Docker',
+            'Oracle', 'Git', 'Microservices', 'Groovy'],
+        projects: [
+            {company: 'ING Bank Slaski', description: 'Working in Mobile Payments team in a bank company. ' +
+                    'At the beginning, developing new features and maintenance of existing backend for fledgeling ' +
+                    'payment method: BLIK-C (Contacless BLIK). Then, development of backend for brand new payment ' +
+                    'method: Visa Mobile. Creating project from scratch, choosing architecture and so on. In both ' +
+                    'cases, development was related to microservices architecture but in case of BLIK-C it was partly ' +
+                    'about migrating from monolith.'},
+            {company: 'JCommerce', description: 'Inside company project. Development of backend for browser RPG game. ' +
+                    'Implementation of tasks related to writing and maintaining microservices based on Spring Boot and ' +
+                    'communicating by Kafka.'}
+        ]
     },
     {
         company: 'Proeko Zarzadzamy Energia',

@@ -5,11 +5,22 @@ export const ExperienceItem: FunctionComponent<ExperienceItemInfo> = (props: Exp
     <div className="card-item">
         <div>
             <h3>{props.position}</h3>
-            <h4>{props.company} ({props.companyType})</h4>
+            <h4>{props.company}</h4>
             <h5>{props.companyType}</h5>
+            <h5>{props.from} - {props.to}</h5>
             <hr/>
-            <h4>{props.description}</h4>
-            <h4>{props.technologies.join(', ')}</h4>
-            <h4>{props.from} - {props.to}</h4>
+            <h4 className="normal-font-weight">{props.description}</h4>
+            <h4>Technologies: <h4 className="normal-font-weight">{props.technologies.join(' / ')}</h4></h4>
+            {props.projects && <div>
+                <h4>Projects:</h4>
+                <ul className={"project-list"}>
+                    {props.projects.map(project => {
+                        return <li>
+                            <span className={"font-weight-bold"}>{project.company}</span>
+                            <h4 className={"normal-font-weight"}>{project.description}</h4>
+                        </li>
+                    })}
+                </ul>
+            </div>}
         </div>
     </div>
