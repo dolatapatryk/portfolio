@@ -75,6 +75,7 @@ a {
 .typing-effect {
     font-size: var(--typing-font);
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .social {
